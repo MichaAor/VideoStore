@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Cliente {
     private String nombre;
     private int telefono;
@@ -39,7 +41,12 @@ public class Cliente {
         if (o == this) return true;
         if (!(o instanceof Cliente)) return false;
         Cliente c1 = (Cliente) o;
-        return c1.nombre == nombre && c1.telefono == telefono && c1.direccion ==
-                direccion;
+        return c1.nombre == this.nombre && c1.telefono == this.telefono && c1.direccion ==
+                this.direccion;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, telefono, direccion);
     }
 }

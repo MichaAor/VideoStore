@@ -11,6 +11,10 @@ public class Film {
     private String siglasPais;
     private String descripcion;
     private int stock;
+    private int cantVecesAlq;
+
+
+    public Film(){}
 
     public Film(String titulo, LocalDate fechaDeLanzamiento, float duracion, String clasfDeAudencia, String siglasPais, String descripcion, int stock) {
         this.titulo = titulo;
@@ -70,6 +74,10 @@ public class Film {
     }
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public void fuiAlquilado(){
+        this.cantVecesAlq++;
     }
 
 
