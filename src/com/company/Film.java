@@ -26,7 +26,6 @@ public class Film {
         this.stock = stock;
     }
 
-
     public String getTitulo() {
         return this.titulo;
     }
@@ -76,15 +75,29 @@ public class Film {
         this.stock = stock;
     }
 
-    public void fuiAlquilado(){
-        this.cantVecesAlq++;
-    }
-
-
     public int getCantVecesAlq() {
         return this.cantVecesAlq;
     }
     public void setCantVecesAlq(int cantVecesAlq) {
         this.cantVecesAlq = cantVecesAlq;
+    }
+
+    public void fuiAlquilado(){
+        this.cantVecesAlq++;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Film{" +
+                "titulo='" + titulo + '\'' +
+                ", fechaDeLanzamiento=" + fechaDeLanzamiento +
+                ", duracion=" + duracion +
+                ", clasfDeAudencia='" + clasfDeAudencia + '\'' +
+                ", siglasPais='" + siglasPais + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", stock=" + stock +
+                ", cantVecesAlq=" + cantVecesAlq +
+                '}';
     }
 }

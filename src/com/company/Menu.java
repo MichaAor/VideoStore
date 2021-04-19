@@ -25,15 +25,17 @@ public class Menu {
                 mI.mostrarAlquileresHOY(LocalDate.now());
             case 3:
                 System.out.println("Ingrese por favor sus datos: Nombre,telefono,direccion en orden correspondiente");
-                Cliente aux = new Cliente(sc.nextLine(),sc.nextInt(),sc.nextLine());
-                mI.mostrarUlt10Clnt(aux);
+                Cliente cAux = new Cliente(sc.nextLine(),sc.nextInt(),sc.nextLine());
+                mI.mostrarUlt10Clnt(cAux);
             case 4:
                 //titulos mas alquilados
             case 5:
                 ///También quiere poder buscar títulos por género y ordenarlos según popularidad.
             case 6:
-                System.out.println("Ingrese datos de su pelicula");
-                Film pelicula = new Film(sc.nextLine(),sc.nextLine())
+                System.out.println("Ingrese titulo de su pelicula");
+                Film fAux = mI.revisarCatalogo(sc.nextLine());
+                System.out.println(fAux.toString());
+
         }
     }
 

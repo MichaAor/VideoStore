@@ -109,10 +109,9 @@ public class VideoStore {
         }
         return rt;
     }
-
 }
 
-        /*public void mostrarMasAlquilados(List<Film> catalogo){
+        public void mostrarMasAlquilados(List<Film> catalogo){
             List<Film> mVal = new ArrayList<Film>();
             for(Film peli : catalogo){
                 Film aux = new Film();
@@ -122,9 +121,9 @@ public class VideoStore {
                         mVal.add(aux);
                     }
                 }
-                this.mostrarAlquileresHOY(catalogo.);
+                this.mostrarMasAlquilados(catalogo);
             }
-        }*/
+        }
 
 
 
