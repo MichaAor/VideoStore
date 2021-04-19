@@ -36,6 +36,8 @@ public class Cliente {
         this.direccion = direccion;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (o == this) return true;

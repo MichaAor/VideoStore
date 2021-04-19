@@ -7,6 +7,7 @@ public class Alquiler {
     private Cliente cliente;
     private BoletaPrest boleta;
     private Film pelicula;
+    private int estado = 1;
 
     public Alquiler(Film pelicula,Cliente cliente) {
         this.id = UUID.randomUUID();
@@ -34,5 +35,19 @@ public class Alquiler {
     }
     public void setId(UUID id) {
         this.id = id;
+    }
+
+    public Cliente getCliente() {
+        return this.cliente;
+    }
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public int getEstado() {
+        return this.estado;
+    }
+    public void setEstado(int estado) {
+        this.estado = estado;
     }
 }

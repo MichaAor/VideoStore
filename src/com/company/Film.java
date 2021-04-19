@@ -81,8 +81,10 @@ public class Film {
     }
 
 
-
-
-
-
+    public int getCantVecesAlq() {
+        return this.cantVecesAlq;
+    }
+    public void setCantVecesAlq(int cantVecesAlq) {
+        this.cantVecesAlq = cantVecesAlq;
+    }
 }
